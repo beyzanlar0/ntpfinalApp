@@ -13,21 +13,16 @@ namespace ntpfinalApp
     {
         public int OgrenciId { get; set; }
 
-        [Column(TypeName = "varchar")]
-        [MaxLength(20)]
-        [Required]
+       
         public string Ad { get; set; }
 
-        [Column(TypeName = "varchar")]
-        [MaxLength(20)]
-        [Required]
+     
         public string Soyad { get; set; }
 
-        [Column(TypeName = "varchar")]
-        [MaxLength(20)]
-        [Required]
+       
         public string Numara { get; set; }
         public int SinifId { get; set; }
+        public Sinif Sinif { get; set; }    
         public override string ToString()
         {
             return $"{this.Numara}-{this.Ad}-{this.Soyad}";

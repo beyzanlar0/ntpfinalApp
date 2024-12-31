@@ -12,14 +12,10 @@ namespace ntpfinalApp
     {
         public int DersId { get; set; }
 
-        [Column(TypeName = "varchar")]
-        [MaxLength(20)]
-        [Required]
+       
         public string DersKod { get; set; }
 
-        [Column(TypeName = "varchar")]
-        [MaxLength(20)]
-        [Required]
+        
         public string DersAd { get; set; }
 
         public ICollection<OgrenciDers> OgrenciDersler { get; set; }

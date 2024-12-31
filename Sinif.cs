@@ -13,14 +13,9 @@ namespace ntpfinalApp
         public int SinifId { get; set; }
 
 
-        [Column(TypeName = "varchar")]
-        [MaxLength(20)]
-        [Required]
         public string SinifAd { get; set; }
 
-        [Column(TypeName = "varchar")]
-        [MaxLength(20)]
-        [Required]
+        
         public string SinifKontenjan { get; set; }
 
         public ICollection<Ogrenci> Ogrenciler { get; set; }
